@@ -4,8 +4,13 @@ const Contact = () => {
   return (
     <section id="contact" className={styles.container}>
       <h1 className="section-title">Contact</h1>
-      <form action="./action.php">
+      <form action="https://api.web3forms.com/submit" method="POST">
         <div className={styles.formGroup}>
+          <input
+            type="hidden"
+            name="access_key"
+            value="6650f11e-d18a-45a1-a796-a40f28f50334"
+          ></input>
           <label htmlFor="name" hidden>
             Name:
           </label>
@@ -32,11 +37,11 @@ const Contact = () => {
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="name" hidden>
-            Name
+          <label htmlFor="message" hidden>
+            Message
           </label>
           <textarea
-            name="textarea"
+            name="message"
             id="message"
             placeholder="Message"
             required
