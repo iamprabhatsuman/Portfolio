@@ -43,7 +43,7 @@ const Contact = () => {
           <textarea
             name="message"
             id="message"
-            placeholder="Message"
+            placeholder="Leave Your Message"
             required
           ></textarea>
         </div>
